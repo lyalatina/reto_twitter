@@ -40,7 +40,7 @@ img{
 
 textarea {
 	width: 70%;
-	height: 4em;
+	height: 10em;
 	color: rgb(100, 81, 192);
 	font-size: 15px;
 	padding: 1em;
@@ -117,4 +117,16 @@ textarea {
 p {
 	display: inline-block;
 	margin-left: 0.5em;
+}
+
+#contadorNumeros{
+	font-size: 20px;
+	font-family: Delius;
+	background-color: oldlace;
+	padding: 10px;
+	width: 70px;
+	margin: 0 auto 20px auto;
+	border-radius: 5px;
+	border: 3px solid black;
+	display: inline-block;
 }
