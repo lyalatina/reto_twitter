@@ -53,22 +53,18 @@ boton.addEventListener("click", function () {
   var tweet = document.getElementById("tweet").value;
   var contadorDeNumbers = document.getElementById("contadorNumeros");
   document.getElementById("tweet").value = "";
-  
+
 });
 var contadorDeNumbers;
 function newTweet(tweet) {
   var nuevoTweet = document.createElement("div"),
     contenedor = document.getElementById("contenedorTweets"),
     p = document.createElement("p");
-
-
-  newFunction(tweet, contenedor, nuevoTweet);
+    newFunction(tweet, contenedor, nuevoTweet);
 }
 tweet.addEventListener("keydown", function () {
   contador(tweet);
 });
-
-
 
 function contador(tweet) {
   boton.disabled = false;
@@ -76,7 +72,7 @@ function contador(tweet) {
   var limite = 140;
   var longitud = document.getElementById("tweet").value.length;
   var count = document.getElementById("contadorNum").innerHTML = limite - longitud;
-  
+
   if (longitud >= 140) {
     contadorDeNumbers.style.color = "red";
     boton.disabled = true;
